@@ -212,7 +212,6 @@ $.fn.dataTable.ext.search.push(function (settings, searchData) {
 
 
 window.onload = function () {
-   const qudtUnitListUri = "https://qudt.org/2.1/vocab/unit";  // not CORS friendly
-   const githubUnitListUri = "https://raw.githubusercontent.com/qudt/qudt-public-repo/master/vocab/unit/VOCAB_QUDT-UNITS-ALL-v2.1.ttl";
-   fetchUnits(githubUnitListUri);
+   const qudtUnitListUri = "https://qudt.org/vocab/unit/";  // not CORS friendly
+   fetchUnits(qudtUnitListUri);
 };
